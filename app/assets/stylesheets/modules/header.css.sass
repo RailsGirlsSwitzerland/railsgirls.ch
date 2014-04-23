@@ -1,0 +1,66 @@
+header
+  .background-image
+    height: 400px
+    width: auto
+    background-size: cover
+    background-position: 50%
+    +box-shadow(inset 0px 100px 135px rgba(0,0,0,0.8), inset 0px -130px 135px rgba(0,0,0,0.7))
+
+  .header-title
+    bottom: 145px
+    width: 100%
+    position: absolute
+    margin: 0 auto 0 auto
+    +text-shadow(#555 1px 1px)
+
+    h1
+      color: white
+      font-size: 60px
+      font-weight: 600
+      text-align: center
+      line-height: 60px
+    h2
+      color: white
+      font-style: italic
+      font-size: 25px
+      text-align: center
+      line-height: 35px
+
+  .header-navigation
+    color: white
+    ul
+      padding-top: 20px
+
+      .logo
+        img
+          +border-radius(50%)
+          height: 40px
+          width: 40px
+          float: left
+      li
+        line-height: 40px
+        vertical-align: middle
+        display: inline-block
+        padding-right: 40px
+
+        &.active
+          a
+            color: $red
+        a
+          font-size: 17px
+          &:hover
+            color: $red
+          
+  .header-circle
+    width: 150px
+    height: 150px
+    +border-radius(50%)
+    background-color: white
+    position: relative
+    margin-top: -100px
+    padding: 15px
+    display: block
+    margin-left: auto
+    margin-right: auto
+    border: 5px solid $red
+    background-size: cover

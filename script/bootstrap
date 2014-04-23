@@ -1,0 +1,66 @@
+#!/usr/bin/env ruby
+
+#
+# bootstrap
+#
+#
+#
+# lol constants
+PROJECT_NAME = "railsgirls"
+DB_HOST = "localhost"
+HEROKU_PRODUCTION = "railsgirls-ch-master"
+HEROKU_STAGING = "railsgirls-ch-staging"
+LOGFILE = "log/bootstrap.log"
+
+#
+# Welcome to the Bootstrap Script
+#
+puts ""
+puts "#{PROJECT_NAME} bootstrap"
+puts "================ "
+puts ""
+puts "! Logs will be written to: #{LOGFILE}"
+system ("echo 'Bootstrap started at #{Time.now}' > #{LOGFILE}")
+puts ""
+
+#
+# Check for Bundler
+#
+unless system("which bundle 2>&1 > /dev/null")
+  puts "x You need to install Bundler:"
+  puts "  => gem isntall bundler"
+  exit(1)
+else
+  puts "+ Bundler found."
+end
+
+#
+# Check for Heroku toolbelt
+#
+unless system("which heroku 2>&1 > /dev/null")
+  puts "+ You need to install the Heroku toolbelt:"
+  puts "  => https://toolbelt.heroku.com/"
+  exit(1)
+else
+  puts "+ Heroku toolbelt found."
+end
+
+#
+# Lets install some bundles
+#
+puts ""
+puts "Installing bundles..."
+system("bundle install >> #{LOGFILE}")
+
+#
+# Restart the Rails Server if it is running (for pow users)
+#
+puts ""
+puts "Restarting app..."
+system("touch tmp/restart.txt")
+
+#
+# DONE
+#
+puts ""
+puts "Sweet, my job here is done!"

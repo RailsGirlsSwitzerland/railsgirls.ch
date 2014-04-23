@@ -1,0 +1,15 @@
+<% content_for :navigation do %>
+  <nav class="header-navigation center">
+    <ul>
+      <li class="logo">
+        <%= link_to root_url do %>
+          <%= image_tag 'icons/heart.png' %>
+        <% end %>
+      </li>
+      <li><%= nav_tab "Home", root_url, current: current_tab %></li>
+      <li><%= nav_tab "Events", events_path, current: current_tab %></li>
+      <li><%= nav_tab "Team", team_path, current: current_tab %></li>
+      <li><%= nav_tab "Contact", contact_path, current: current_tab %></li>
+    </ul>
+  </nav>
+<% end %>
