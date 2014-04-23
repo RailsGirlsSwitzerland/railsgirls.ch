@@ -17,6 +17,7 @@ gem 'uglifier', '>= 1.3.0'
 # HTML / CSS
 gem 'sass-rails', '~> 4.0.3'
 gem "compass-rails", "~> 1.1.2"
+gem 'font-awesome-rails', '~> 4'
 
 # Environments
 group :production do

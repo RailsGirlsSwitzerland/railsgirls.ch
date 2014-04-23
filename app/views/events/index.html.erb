@@ -1,1 +1,40 @@
 <% currently_at "Events" %>
+
+<div class="info-box">
+  <p><%= fa_icon "exclamation-triangle" %> Are you trying to bring Rails Girls to your local City? Need help organizing an event? Then <%= mail_to "info@railsgirls.ch", "get in touch" %> with us!</p>
+</div>
+
+<ul class="events">
+  <h1>Upcoming Events</h1>
+
+  <% 2.times do %>
+    <li class="event" >
+    <%= link_to "#" do %>
+      <div class="event-image" style="background-image: url('assets/images/zurich.jpg')">
+        <div class="label">
+          <h1>Basel</h1>
+          <h2>5 - 6 April 2013</h2>
+        </div>
+      </div>
+    <% end %>
+    </li>
+  <% end %>
+
+  <div class="divider"></div>
+
+  <h1>Past Events</h1>
+
+  <% 3.times do %>
+    <li class="event" >
+    <%= link_to "#" do %>
+      <div class="event-image" style="background-image: url('assets/images/zurich.jpg')">
+        <div class="label">
+          <h1>Basel</h1>
+          <h2>5 - 6 April 2013</h2>
+        </div>
+      </div>
+    <% end %>
+    </li>
+  <% end %>
+
+</ul>

@@ -7,7 +7,7 @@ class PagesController < ApplicationController
   end
 
   def team
-    @header_title = "About"
+    @header_title = "Team"
     @page_title = "Meet the Team"
     @page_subtitle = "We make magic happen"
   end
