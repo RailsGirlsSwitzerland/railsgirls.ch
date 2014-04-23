@@ -1,1 +1,54 @@
 <% currently_at "Team" %>
+
+<div class="intro">
+  <h2>Core Team</h2>
+  <p>
+    This is the team that is in charge of Rails Girls Switzerland. (needs better copy)
+  </p>
+
+  <ul class="people">
+    <% 4.times do %>
+    <li class="person one-half">
+      <div class="person-image">
+        <%= image_tag "people/rodrigo.jpg", class: "avatar" %>
+      </div>
+      <div class="person-info">
+        <h1>Rodrigo Haenggi</h1>
+        <p>Organizer of Rails Girls Basel. Coach at Rails Girls Zurich, Vienna and Ticino</p>
+        <ul class="person-social">
+          <li><%= fa_icon "twitter" %></li>
+          <li><%= fa_icon "github" %></li>
+          <li><%= fa_icon "globe" %></li>
+        </ul>
+      </div>
+    </li>
+    <% end %>
+  </ul>
+  <div style="clear:both;"></div>
+</div>
+
+<div class="intro">
+  <h2>Past Organizers</h2>
+  <p>
+    Following people have organized Rails Gils Events in the past... (needs better copy)
+  </p>
+  <ul class="people">
+    <% 9.times do %>
+    <li class="person one-half">
+      <div class="person-image">
+        <%= image_tag "people/rodrigo.jpg", class: "avatar" %>
+      </div>
+      <div class="person-info">
+        <h1>Rodrigo Haenggi</h1>
+        <p>Organizer of Rails Girls Basel. Coach at Rails Girls Zurich, Vienna and Ticino</p>
+        <ul class="person-social">
+          <li><%= fa_icon "twitter" %></li>
+          <li><%= fa_icon "github" %></li>
+          <li><%= fa_icon "globe" %></li>
+        </ul>
+      </div>
+    </li>
+    <% end %>
+  </ul>
+  <div style="clear:both;"></div>
+</div>
