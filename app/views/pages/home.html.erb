@@ -27,10 +27,18 @@
 <div class="intro one-half" style="float: right;">
   <h2>Upcoming Events</h2>
   <ul class="events">
-    <li class="event-short">
+  <% 2.times do %>
+    <li class="event" >
+    <%= link_to "#" do %>
+      <div class="event-image" style="background-image: url('assets/images/zurich.jpg')">
+        <div class="label">
+          <h1>Basel</h1>
+          <h2>5 - 6 April 2013</h2>
+        </div>
+      </div>
+    <% end %>
     </li>
-    <li class="event-short">
-    </li>
+  <% end %>
   </ul>
 </div>
 
