@@ -5,5 +5,8 @@ Rails.application.routes.draw do
   get '/team', to: "pages#team"
   get '/contact', to: "pages#contact"
 
-  get '/events', to: "events#index"
+  scope 'events' do
+    get '/',    to: "events#index", as: :events
+    get '/:id', to: "events#show",  as: :event
+  end
 end

@@ -17,14 +17,25 @@ class Event
     def past
       $events.select{ |event| event.end_date < Date.today }
     end
+
+    def find_by_slug(slug)
+      $events.select{ |event| event.slug == slug }.first
+    end
   end
 
   def image_path
-    path = title.parameterize
-    if File.exists?("#{Rails.root}/app/assets/images/events/#{path}.jpg")
-      "events/#{path}.jpg"
+    if File.exists?("#{Rails.root}/app/assets/images/events/#{slug}.jpg")
+      "events/#{slug}.jpg"
     else
       "events/missing.jpg"
     end
+  end
+
+  def slug
+    title.parameterize
+  end
+
+  def date
+    "%s - %s" % [start_date.strftime("%d."), end_date.strftime("%d. %B %Y")]
   end
 end
