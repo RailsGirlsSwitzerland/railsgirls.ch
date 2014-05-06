@@ -12,7 +12,7 @@ class PagesController < ApplicationController
     @page_subtitle = "We make magic happen"
   end
 
-  def contact
+  def contact 
     @header_title = "Contact"
     @page_title = "Get in touch"
     @page_subtitle = "Looking for a workshop in you city? We love to help!"
