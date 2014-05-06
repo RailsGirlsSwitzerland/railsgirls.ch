@@ -1,15 +1,13 @@
-<% content_for :navigation do %>
-  <nav class="header-navigation center">
-    <ul>
-      <li class="logo">
-        <%= link_to root_url do %>
-          <%= image_tag 'icons/heart.png' %>
-        <% end %>
-      </li>
-      <li><%= nav_tab "Home", root_url, current: current_tab %></li>
-      <li><%= nav_tab "Events", events_path, current: current_tab %></li>
-      <li><%= nav_tab "Team", team_path, current: current_tab %></li>
-      <li><%= nav_tab "Contact", contact_path, current: current_tab %></li>
-    </ul>
-  </nav>
-<% end %>
+<nav class="header-navigation center">
+  <ul>
+    <li class="logo">
+      <%= link_to root_url do %>
+        <%= image_tag 'icons/heart.png' %>
+      <% end %>
+    </li>
+    <%= active_link_to "Home", root_path, wrap_tag: :li, active: :exclusive %>
+    <%= active_link_to "Events", events_path, wrap_tag: :li %>
+    <%= active_link_to "Team", team_path, wrap_tag: :li %>
+    <%= active_link_to "Contact", contact_path, wrap_tag: :li %>
+  </ul>
+</nav>

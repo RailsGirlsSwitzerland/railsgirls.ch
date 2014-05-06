@@ -19,6 +19,9 @@ gem 'sass-rails', '~> 4.0.3'
 gem "compass-rails", "~> 1.1.2"
 gem 'font-awesome-rails', '~> 4'
 
+# Helper
+gem 'active_link_to'
+
 # Environments
 group :production do
   gem 'rails_12factor'
