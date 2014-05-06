@@ -31,9 +31,10 @@
 <div class="intro one-half" style="float: right;">
   <h2>Upcoming Events</h2>
   <ul class="events">
-  <% 2.times do %>
-    <%= render "events/event" %>
-  <% end %>
+
+    <% @upcoming_events.each do |event| %>
+      <%= render "events/event", event: event %>
+    <% end %>
   </ul>
 </div>
 

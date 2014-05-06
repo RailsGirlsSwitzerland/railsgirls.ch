@@ -1,9 +1,9 @@
 <li class="event" >
   <%= link_to "#" do %>
-    <%= image_tag "events/zurich.jpg", class: "event-image" %>
+    <%= image_tag event.image_path, class: "event-image" %>
     <div class="label">
-      <h1>Basel</h1>
-      <h2>5 - 6 April 2013</h2>
+      <h1><%= event.title %></h1>
+      <h2><%= event.start_date.strftime("%d.") %> - <%= event.end_date.strftime("%d. %B %Y") %></h2>
     </div>
   <% end %>
 </li>

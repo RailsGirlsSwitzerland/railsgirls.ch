@@ -3,16 +3,16 @@
 <ul class="events">
   <h1>Upcoming Events</h1>
 
-  <% 2.times do %>
-    <%= render "event" %>
+  <% @upcoming_events.each do |event| %>
+    <%= render "event", event: event %>
   <% end %>
 
   <div class="divider"></div>
 
   <h1>Past Events</h1>
 
-  <% 3.times do %>
-    <%= render "event" %>
+  <% @past_events.each do |event| %>
+    <%= render "event", event: event %>
   <% end %>
 
 </ul>

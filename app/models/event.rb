@@ -18,4 +18,13 @@ class Event
       $events.select{ |event| event.end_date < Date.today }
     end
   end
+
+  def image_path
+    path = title.parameterize
+    if File.exists?("#{Rails.root}/app/assets/images/events/#{path}.jpg")
+      "events/#{path}.jpg"
+    else
+      "events/missing.jpg"
+    end
+  end
 end
