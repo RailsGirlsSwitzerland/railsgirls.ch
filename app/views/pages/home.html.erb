@@ -25,6 +25,11 @@
 
 <div class="intro one-half">
   <h2>Current News</h2>
+  <% @posts.each do |post| %>
+    <h3><%= post.title %></h3>
+    Published on <%= l(post.date, format: "%A, %e %B %Y", locale: 'en')%><br>
+    <%= post.content_html %>
+  <% end %>
 </div>
 
 <div class="intro one-half" style="float: right;">

@@ -22,6 +22,9 @@ gem 'font-awesome-rails', '~> 4'
 # Helper
 gem 'active_link_to'
 
+# Markdown
+gem 'rdiscount'
+
 # Environments
 group :production do
   gem 'rails_12factor'

@@ -102,6 +102,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     raindrops (0.13.0)
     rake (10.3.1)
+    rdiscount (2.1.7.1)
     rdoc (4.1.1)
       json (~> 1.4)
     sass (3.2.19)
@@ -156,6 +157,7 @@ DEPENDENCIES
   jquery-rails
   rails (= 4.1.0)
   rails_12factor
+  rdiscount
   sass-rails (~> 4.0.3)
   sdoc
   spring

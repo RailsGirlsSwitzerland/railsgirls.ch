@@ -6,6 +6,7 @@ class PagesController < ApplicationController
     @page_subtitle = "Get started with technology"
 
     @upcoming_events = Event.upcoming
+    @posts = Post.all
   end
 
   def team
