@@ -1,4 +1,12 @@
-- title: "Basel 2"
+- title: "Basel Lite Edition"
+  venue: "unternehmen mitte"
+  address: "Gerbergasse 30"
+  zip: "4001"
+  location: "Basel"
+  start_date: "2014-06-07"
+  end_date: "2014-06-07"
+
+- title: "Basel 2nd Edition"
   venue: "unternehmen mitte"
   address: "Gerbergasse 30"
   zip: "4001"

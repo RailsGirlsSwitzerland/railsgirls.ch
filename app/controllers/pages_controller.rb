@@ -13,6 +13,8 @@ class PagesController < ApplicationController
     @header_title = "Team"
     @page_title = "Meet the Team"
     @page_subtitle = "We make magic happen"
+
+    @team = $team.group_by{ |s| s.group }
   end
 
   def contact

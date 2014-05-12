@@ -5,21 +5,8 @@
   </p>
 
   <ul class="people">
-    <% 4.times do %>
-    <li class="person one-half">
-      <div class="person-image">
-        <%= image_tag "people/rodrigo.jpg", class: "avatar" %>
-      </div>
-      <div class="person-info">
-        <h1>Rodrigo Haenggi</h1>
-        <p>Organizer of Rails Girls Basel. Coach at Rails Girls Zurich, Vienna and Ticino</p>
-        <ul class="person-social">
-          <li><%= fa_icon "twitter" %></li>
-          <li><%= fa_icon "github" %></li>
-          <li><%= fa_icon "globe" %></li>
-        </ul>
-      </div>
-    </li>
+    <% @team["core"].each do |member| %>
+      <%= render 'pages/member', member: member %>
     <% end %>
   </ul>
   <div style="clear:both;"></div>
@@ -31,21 +18,8 @@
     Following people have organized Rails Gils Events in the past... (needs better copy)
   </p>
   <ul class="people">
-    <% 9.times do %>
-    <li class="person one-half">
-      <div class="person-image">
-        <%= image_tag "people/rodrigo.jpg", class: "avatar" %>
-      </div>
-      <div class="person-info">
-        <h1>Rodrigo Haenggi</h1>
-        <p>Organizer of Rails Girls Basel. Coach at Rails Girls Zurich, Vienna and Ticino</p>
-        <ul class="person-social">
-          <li><%= fa_icon "twitter" %></li>
-          <li><%= fa_icon "github" %></li>
-          <li><%= fa_icon "globe" %></li>
-        </ul>
-      </div>
-    </li>
+    <% @team["organizer"].each do |member| %>
+      <%= render 'pages/member', member: member %>
     <% end %>
   </ul>
   <div style="clear:both;"></div>

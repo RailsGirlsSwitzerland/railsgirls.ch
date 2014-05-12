@@ -36,6 +36,10 @@ class Event
   end
 
   def date
-    "%s - %s" % [start_date.strftime("%d."), end_date.strftime("%d. %B %Y")]
+    if start_date == end_date
+      start_date.strftime("%-d %B %Y")
+    else
+      "%s - %s" % [start_date.strftime("%-d"), end_date.strftime("%-d %B %Y")]
+    end
   end
 end

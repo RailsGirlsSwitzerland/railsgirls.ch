@@ -21,6 +21,7 @@ gem 'font-awesome-rails', '~> 4'
 
 # Helper
 gem 'active_link_to'
+gem 'gravtastic'
 
 # Markdown
 gem 'rdiscount'
