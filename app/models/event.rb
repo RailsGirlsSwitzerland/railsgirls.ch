@@ -1,7 +1,7 @@
 class Event
   include HasProperties
 
-  has_properties :title, :venue, :address, :zip, :location, :start_date, :end_date
+  has_properties :title, :venue, :address, :zip, :location, :start_date, :end_date, :rg_url
 
   def initialize params
     super

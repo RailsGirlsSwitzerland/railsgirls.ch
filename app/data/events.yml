@@ -5,6 +5,7 @@
   location: "Basel"
   start_date: "2014-06-07"
   end_date: "2014-06-07"
+  rg_url: ""
 
 - title: "Basel 2nd Edition"
   venue: "unternehmen mitte"
@@ -13,6 +14,7 @@
   location: "Basel"
   start_date: "2014-09-20"
   end_date: "2014-09-21"
+  rg_url: ""
 
 - title: "Ticino"
   venue: "SUPSI"
@@ -21,6 +23,7 @@
   location: "Manno"
   start_date: "2014-03-28"
   end_date: "2014-03-29"
+  rg_url: "http://railsgirls.com/ticino"
 
 - title: "Basel"
   venue: "unternehmen mitte"
@@ -29,6 +32,7 @@
   location: "Basel"
   start_date: "2013-04-05"
   end_date: "2013-04-06"
+  rg_url: "http://railsgirls.com/basel"
 
 - title: "Zurich"
   venue: "HUB Zürich"
@@ -37,3 +41,4 @@
   location: "Zürich"
   start_date: "2012-11-02"
   end_date: "2012-11-03"
+  rg_url: "http://railsgirls.com/zurich"
