@@ -1,9 +1,5 @@
 <div class="intro">
   <h2>Core Team</h2>
-  <p>
-    This is the team that is in charge of Rails Girls Switzerland. (needs better copy)
-  </p>
-
   <ul class="people">
     <% @team["core"].each do |member| %>
       <%= render 'pages/member', member: member %>
@@ -14,9 +10,6 @@
 
 <div class="intro">
   <h2>Past Organizers</h2>
-  <p>
-    Following people have organized Rails Gils Events in the past... (needs better copy)
-  </p>
   <ul class="people">
     <% @team["organizer"].each do |member| %>
       <%= render 'pages/member', member: member %>
