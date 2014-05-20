@@ -1,19 +1,19 @@
-<div class="intro">
+<div class="content-section cf">
   <h2>Core Team</h2>
   <ul class="people">
     <% @team["core"].each do |member| %>
       <%= render 'pages/member', member: member %>
     <% end %>
   </ul>
-  <div style="clear:both;"></div>
 </div>
 
-<div class="intro">
+<div class="divider"></div>
+
+<div class="content-section cf">
   <h2>Past Organizers</h2>
   <ul class="people">
     <% @team["organizer"].each do |member| %>
       <%= render 'pages/member', member: member %>
     <% end %>
   </ul>
-  <div style="clear:both;"></div>
 </div>

@@ -1,16 +1,21 @@
-<ul class="events">
-  <h1>Upcoming Events</h1>
+<div class="content-section">
+  <h2>Upcoming Events</h2>
 
-  <% @upcoming_events.each do |event| %>
-    <%= render "event", event: event %>
-  <% end %>
+  <ul class="events">
+    <% @upcoming_events.each do |event| %>
+      <%= render "event", event: event %>
+    <% end %>
+  </ul>
+</div>
 
-  <div class="divider"></div>
+<div class="divider"></div>
 
-  <h1>Past Events</h1>
+<div class="content-section">
+  <h2>Past Events</h2>
 
-  <% @past_events.each do |event| %>
-    <%= render "event", event: event %>
-  <% end %>
-
-</ul>
+  <ul class="events">
+    <% @past_events.each do |event| %>
+      <%= render "event", event: event %>
+    <% end %>
+  </ul>
+</div>

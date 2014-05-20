@@ -1,10 +1,14 @@
-<div class="background-sprite">
-  <div class="picture-frame" style="width: 500px;">
-    <iframe src="//player.vimeo.com/video/53032561?portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<div class="content-section">
+  <div class="background-sprite">
+    <div class="picture-frame" style="width: 500px;">
+      <iframe src="//player.vimeo.com/video/53032561?portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
   </div>
 </div>
 
-<div class="intro">
+<div class="divider"></div>
+
+<div class="content-section">
   <h2>About Rails Girls Switzerland</h2>
   <p>
     Rails Girls Switzerland is a non-profit association with the aim to give tools and a community for women to understand technology and to build their ideas.
@@ -17,29 +21,37 @@
   <p>
     Let's get excited and make things! <%= mail_to "contact@railsgrils.ch", "Contact us" %> or <%= link_to "follow us on Twitter", "https://twitter.com/railsgirls_ch"  %>.
   </p>
+
+  <div class="info-box mtm">
+    <p><%= fa_icon "exclamation-triangle" %> Are you trying to bring Rails Girls to your local City? Need help organizing an event? Then <%= mail_to "info@railsgirls.ch", "get in touch" %> with us!</p>
+  </div>
 </div>
 
-<div class="info-box">
-  <p><%= fa_icon "exclamation-triangle" %> Are you trying to bring Rails Girls to your local City? Need help organizing an event? Then <%= mail_to "info@railsgirls.ch", "get in touch" %> with us!</p>
-</div>
+<div class="divider"></div>
 
-<div class="intro one-half">
-  <h2>Current News</h2>
-  <% @posts.each do |post| %>
-    <div class="post">
-      <h3><%= post.title %></h3>
-      <div class="published">Published on <%= l(post.date, format: "%A, %e %B %Y", locale: 'en')%></div>
-      <div class="post-body"><%= post.content_html %></div>
+<div class="content-section">
+  <div class="one-half left">
+    <div class="mrm">
+      <h2>Current News</h2>
+      <% @posts.each do |post| %>
+        <div class="post">
+          <h3><%= post.title %></h3>
+          <div class="published">Published on <%= l(post.date, format: "%A, %e %B %Y", locale: 'en')%></div>
+          <div class="post-body"><%= post.content_html %></div>
+        </div>
+      <% end %>
     </div>
-  <% end %>
-</div>
+  </div>
 
-<div class="intro one-half" style="float: right;">
-  <h2>Upcoming Events</h2>
-  <ul class="events">
+  <div class="one-half left">
+    <div class="mlm">
+      <h2>Upcoming Events</h2>
+      <ul class="events">
 
-    <% @upcoming_events.each do |event| %>
-      <%= render "events/event", event: event %>
-    <% end %>
-  </ul>
+        <% @upcoming_events.each do |event| %>
+          <%= render "events/event", event: event %>
+        <% end %>
+      </ul>
+    </div>
+  </div>
 </div>
