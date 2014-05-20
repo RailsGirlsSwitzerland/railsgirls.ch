@@ -1,3 +1,12 @@
+# - title: "Basel 2nd Edition"
+#   venue: "unternehmen mitte"
+#   address: "Gerbergasse 30"
+#   zip: "4001"
+#   location: "Basel"
+#   start_date: "2014-09-20"
+#   end_date: "2014-09-21"
+#   rg_url: ""
+
 - title: "Basel Lite Edition"
   venue: "unternehmen mitte"
   address: "Gerbergasse 30"
@@ -14,15 +23,6 @@
       job: "organizer"
     - name: "Muriel Binder"
       job: "organizer"
-
-- title: "Basel 2nd Edition"
-  venue: "unternehmen mitte"
-  address: "Gerbergasse 30"
-  zip: "4001"
-  location: "Basel"
-  start_date: "2014-09-20"
-  end_date: "2014-09-21"
-  rg_url: ""
 
 - title: "Ticino"
   venue: "SUPSI"
