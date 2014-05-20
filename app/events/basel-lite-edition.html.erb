@@ -133,5 +133,10 @@
 <div class="divider"></div>
 
 <div class="content-section one-whole">
-  <h2>Team</h2>
+  <h2>Coaches & Team</h2>
+  <ul class="people">
+    <% @event.team.each do |member| %>
+      <%= render 'pages/event_member', member: $team.select{|m| member["name"] == m.name}.first, job: member["job"] %>
+    <% end %>
+  </ul>
 </div>

@@ -7,6 +7,13 @@
   end_date: "2014-06-07"
   rg_url: ""
   hashtag: "RGBL"
+  team:
+    - name: "Rodrigo Haenggi"
+      job: "organizer"
+    - name: "Daniel Puglisi"
+      job: "organizer"
+    - name: "Muriel Binder"
+      job: "organizer"
 
 - title: "Basel 2nd Edition"
   venue: "unternehmen mitte"
