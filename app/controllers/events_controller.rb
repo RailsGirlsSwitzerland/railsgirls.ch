@@ -16,5 +16,13 @@ class EventsController < ApplicationController
     @page_title    = "Rails Girls #{@event.title}"
     @page_subtitle = @event.date
     @header_image  = "event-#{@event.slug}"
+
+    event_page = File.join(Rails.root, "app", "events", "#{@event.slug}.html.erb")
+
+    if File.exists? event_page
+      render file: event_page
+    else
+      raise ActionController::RoutingError.new("Page /events/#{@event.slug} not found")
+    end
   end
 end
