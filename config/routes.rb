@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   get '/home', to: "pages#home"
   get '/team', to: "pages#team"
+  get '/afterwards', to: "pages#afterwards"
   get '/contact', to: "pages#contact"
 
   scope 'events' do

@@ -23,4 +23,10 @@ class PagesController < ApplicationController
     @page_subtitle = "Looking for a workshop in you city? We love to help!"
   end
 
+  def afterwards
+    @header_title = "After The Event"
+    @page_title   = "After The Event"
+    @page_subtitle   = "How To Continue With Programming"
+  end
+
 end
