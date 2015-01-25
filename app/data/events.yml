@@ -1,3 +1,12 @@
+- title: "Zurich 2nd Edition"
+  venue: "Impcat Hub Zurich"
+  address: "Viaduktstrasse 93"
+  zip: "8005"
+  location: "Zurich"
+  start_date: "2015-05-30"
+  end_date: "2015-05-31"
+  rg_url: "http://railsgirls.com/zurich2015"
+
 - title: "Basel 2nd Edition"
   venue: "unternehmen mitte"
   address: "Gerbergasse 30"

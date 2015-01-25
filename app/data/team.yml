@@ -36,7 +36,15 @@
   github:       ""
   web:          "http://stellaschieffer.wordpress.com"
   description:  "Organizer of Rails Girls Zurich"
-  group:        "organizer"
+  group:        "core"
+
+- name:         "Katja Graefenhain"
+  email:        "katja@graefenhain.ch"
+  twitter:      "k_graefenhain"
+  github:       "k-graefenhain"
+  web:          "http://katisreisen.wordpress.com"
+  description:  "Organizer of Rails Girls Zurich"
+  group:        "core"
 
 - name:         "Magdalena Kurpierz"
   email:        "magdalena.kurpierz@gmx.ch"
