@@ -58,7 +58,7 @@ class Post
   end
 
   def date
-    @date ||= Time.zone.parse(metadata[:date] || @date_str).to_date
+    @date ||= metadata[:date].to_date
   end
 
   delegate :year, :month, :day, :to => :date
