@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.2.3'
+ruby '2.3.1'
 
-gem 'rails', '4.1.0'
+gem 'rails', '4.2.4'
 
 # Backend
 gem 'unicorn'
@@ -18,7 +18,7 @@ gem 'uglifier', '>= 1.3.0'
 
 # HTML / CSS
 gem 'sass-rails', '~> 4.0.3'
-gem "compass-rails", "~> 1.1.2"
+gem "compass-rails"
 gem 'font-awesome-rails', '~> 4'
 
 # Helper
