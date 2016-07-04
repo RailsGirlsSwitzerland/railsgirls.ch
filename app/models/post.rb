@@ -80,10 +80,6 @@ class Post
     RDiscount.new(content).to_html.html_safe
   end
 
-  class Sanitizer < HTML::WhiteListSanitizer
-    self.allowed_tags -= %w(img a)
-  end
-
   TagHelper = Class.new.extend ActionView::Helpers::TagHelper
 
   def summary_html
