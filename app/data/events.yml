@@ -7,6 +7,15 @@
   end_date: "2017-10-15"
   rg_url: "http://railsgirls.com/geneva"
 
+- title: "Bern 2017"
+  venue: "Puzzle ITC"
+  address: "Belpstrasse 37"
+  zip: "3007"
+  location: "Bern"
+  start_date: "2017-11-24"
+  end_date: "2017-11-25"
+  rg_url: "http://railsgirls.com/bern"
+
 - title: "Zurich 2017"
   venue: "Impcat Hub Zurich"
   address: "Viaduktstrasse 93"
