@@ -1,3 +1,12 @@
+- title: "Zurich 2019"
+  venue: "Impact Hub Zurich - Viadukt"
+  address: "Viaduktstrasse 93"
+  zip: "8005"
+  location: "Zurich"
+  start_date: "2019-10-11"
+  end_date: "2019-10-12"
+  rg_url: "http://railsgirls.com/zurich2019"
+
 - title: "Geneva 2017"
   venue: "Campus Biotech"
   address: "9 chemin des Mines"
@@ -17,7 +26,7 @@
   rg_url: "http://railsgirls.com/bern"
 
 - title: "Zurich 2017"
-  venue: "Impcat Hub Zurich"
+  venue: "Impact Hub Zurich"
   address: "Viaduktstrasse 93"
   zip: "8005"
   location: "Zurich"
@@ -26,7 +35,7 @@
   rg_url: "http://railsgirls.com/zurich2017"
 
 - title: "Zurich 2016"
-  venue: "Impcat Hub Zurich"
+  venue: "Impact Hub Zurich"
   address: "Viaduktstrasse 93"
   zip: "8005"
   location: "Zurich"
@@ -35,7 +44,7 @@
   rg_url: "http://railsgirls.com/Zurich2016"
 
 - title: "Zurich 2nd Edition"
-  venue: "Impcat Hub Zurich"
+  venue: "Impact Hub Zurich"
   address: "Viaduktstrasse 93"
   zip: "8005"
   location: "Zurich"
@@ -51,23 +60,6 @@
   start_date: "2014-09-20"
   end_date: "2014-09-21"
   rg_url: "http://railsgirls.com/basel2014"
-
-# - title: "Basel Lite Edition"
-#   venue: "unternehmen mitte"
-#   address: "Gerbergasse 30"
-#   zip: "4001"
-#   location: "Basel"
-#   start_date: "2014-06-07"
-#   end_date: "2014-06-07"
-#   rg_url: ""
-#   hashtag: "RGBL"
-#   team:
-#     - name: "Rodrigo Haenggi"
-#       job: "organizer"
-#     - name: "Daniel Puglisi"
-#       job: "organizer"
-#     - name: "Muriel Binder"
-#       job: "organizer"
 
 - title: "Ticino"
   venue: "SUPSI"
